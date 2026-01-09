@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export default function Industries() {
   return (
     <div className="bg-neutral-950 text-neutral-100 px-8 py-20 min-h-screen">
@@ -18,6 +19,30 @@ export default function Industries() {
         <div className="bg-neutral-900 p-8 rounded-2xl">
           <h2 className="text-2xl mb-3">Professional Services</h2>
           <p className="text-neutral-300">Premium payment experiences that reflect your credibility.</p>
+=======
+export default function Solutions() {
+  return (
+    <div className="bg-neutral-950 text-neutral-100 px-8 py-20 min-h-screen">
+      <h1 className="text-4xl font-bold mb-10">Payment Solutions</h1>
+      <div className="grid md:grid-cols-3 gap-8">
+        <div className="bg-neutral-900 p-8 rounded-2xl">
+          <h2 className="text-2xl mb-4">Countertop Machines</h2>
+          <p className="text-neutral-300">
+            Perfect for fixed-location businesses needing speed, reliability and a premium checkout experience.
+          </p>
+        </div>
+        <div className="bg-neutral-900 p-8 rounded-2xl">
+          <h2 className="text-2xl mb-4">Portable Machines</h2>
+          <p className="text-neutral-300">
+            Take payments anywhere on-site with fast connectivity and elegant hardware.
+          </p>
+        </div>
+        <div className="bg-neutral-900 p-8 rounded-2xl">
+          <h2 className="text-2xl mb-4">High-Volume Solutions</h2>
+          <p className="text-neutral-300">
+            Built for busy venues processing large transaction volumes with minimal friction.
+          </p>
+>>>>>>> main
         </div>
       </div>
     </div>
