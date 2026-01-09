@@ -1,0 +1,25 @@
+export default function Industries() {
+  return (
+    <div className="bg-neutral-950 text-neutral-100 px-8 py-20 min-h-screen">
+      <h1 className="text-4xl font-bold mb-10">Industries We Serve</h1>
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="bg-neutral-900 p-8 rounded-2xl">
+          <h2 className="text-2xl mb-3">Hospitality</h2>
+          <p className="text-neutral-300">Fast table-side payments and reduced queues.</p>
+        </div>
+        <div className="bg-neutral-900 p-8 rounded-2xl">
+          <h2 className="text-2xl mb-3">Retail</h2>
+          <p className="text-neutral-300">Reliable terminals that keep tills moving at peak hours.</p>
+        </div>
+        <div className="bg-neutral-900 p-8 rounded-2xl">
+          <h2 className="text-2xl mb-3">Trades</h2>
+          <p className="text-neutral-300">Get paid on the spot with portable machines.</p>
+        </div>
+        <div className="bg-neutral-900 p-8 rounded-2xl">
+          <h2 className="text-2xl mb-3">Professional Services</h2>
+          <p className="text-neutral-300">Premium payment experiences that reflect your credibility.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
