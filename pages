@@ -1,0 +1,66 @@
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-neutral-950 text-neutral-100">
+      {/* NAV */}
+      <nav className="flex justify-between items-center px-8 py-6 border-b border-neutral-800">
+        <h1 className="text-2xl font-semibold tracking-wide">Dojo Payments Partner</h1>
+        <div className="space-x-6 text-sm text-neutral-300">
+          <Link href="/">Home</Link>
+          <Link href="/solutions">Solutions</Link>
+          <Link href="/industries">Industries</Link>
+          <Link href="/why-us">Why Us</Link>
+          <Link href="/book-a-call">Get Started</Link>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="px-8 py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 className="text-5xl font-bold leading-tight">
+            Luxury Payment Solutions for Modern UK Businesses
+          </h2>
+          <p className="mt-6 text-neutral-300 max-w-xl">
+            Accept card payments faster, smarter, and more securely with Dojo card machines -- tailored for
+            growing UK merchants.
+          </p>
+          <div className="mt-8 flex gap-4">
+            <Link href="/book-a-call">
+              <button className="rounded-2xl px-8 py-6 text-base bg-white text-black">
+                Request a Free Quote
+              </button>
+            </Link>
+            <Link href="/book-a-call">
+              <button className="rounded-2xl px-8 py-6 text-base border border-white">
+                Book a Call
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="bg-neutral-900 rounded-2xl p-10 shadow-2xl">
+          <h3 className="text-xl font-semibold mb-4">Get Started Today</h3>
+          <form
+            method="POST"
+            action="/api/lead"
+            className="grid gap-4"
+          >
+            <input className="p-3 rounded-xl bg-neutral-800" name="businessName" placeholder="Business Name" />
+            <input className="p-3 rounded-xl bg-neutral-800" name="contactName" placeholder="Contact Name" />
+            <input className="p-3 rounded-xl bg-neutral-800" name="email" placeholder="Email Address" />
+            <input className="p-3 rounded-xl bg-neutral-800" name="phone" placeholder="Phone Number" />
+            <input className="p-3 rounded-xl bg-neutral-800" name="turnover" placeholder="Monthly Card Turnover (£)" />
+            <select className="p-3 rounded-xl bg-neutral-800" name="callbackType">
+              <option value="instant">Request instant callback</option>
+              <option value="schedule">Book a scheduled call</option>
+            </select>
+            <button className="rounded-xl mt-2 bg-white text-black py-3">Get Connected</button>
+          </form>
+          <p className="text-xs text-neutral-400 mt-2">
+            Leads are assigned to a payment specialist for callback & follow-up
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
